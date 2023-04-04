@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Login Register</string>
+    <string name="detail">Please enter your details bellow to continue</string>
+</resources>

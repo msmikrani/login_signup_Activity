@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".otpverify">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Password"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="70dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/otp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the verification code we just sent you on your email address."
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="2dp"-->
+<!--            android:width="35dp"-->
+<!--            android:background="@drawable/otpbg"-->
+<!--            android:gravity="center"-->
+<!--            android:imeOptions="actionNext"-->
+<!--            android:importantForAutofill="no"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="1"-->
+<!--            android:padding="8dp"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="2dp"-->
+<!--            android:width="35dp"-->
+<!--            android:background="@drawable/otpbg"-->
+<!--            android:gravity="center"-->
+<!--            android:imeOptions="actionNext"-->
+<!--            android:importantForAutofill="no"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="1"-->
+<!--            android:padding="8dp"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="2dp"-->
+<!--            android:width="35dp"-->
+<!--            android:background="@drawable/otpbg"-->
+<!--            android:gravity="center"-->
+<!--            android:imeOptions="actionNext"-->
+<!--            android:importantForAutofill="no"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="1"-->
+<!--            android:padding="8dp"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="2dp"-->
+<!--            android:width="35dp"-->
+<!--            android:background="@drawable/otpbg"-->
+<!--            android:gravity="center"-->
+<!--            android:imeOptions="actionNext"-->
+<!--            android:importantForAutofill="no"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="1"-->
+<!--            android:padding="8dp"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="2dp"-->
+<!--            android:width="35dp"-->
+<!--            android:background="@drawable/otpbg"-->
+<!--            android:gravity="center"-->
+<!--            android:imeOptions="actionNext"-->
+<!--            android:importantForAutofill="no"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="1"-->
+<!--            android:padding="8dp"-->
+<!--            android:textSize="20sp" />-->
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="5"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            app:inputType="number"
+            app:password="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't receive a code?"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:textColor="@color/btncolor"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnverify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:backgroundTint="@color/btncolor"
+        android:padding="15dp"
+        android:text="Verify"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        app:cornerRadius="30dp" />
+
+
+</LinearLayout>
